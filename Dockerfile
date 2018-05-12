@@ -34,6 +34,8 @@ RUN Xvfb :99 -ac -screen 0 1280x1024x24 > /dev/null &
 RUN echo "export DISPLAY=:99" >> ~/.profile
 ENV DISPLAY :99
 
+WORKDIR /root
+
 RUN git clone https://github.com/chris-chris/SPIRAL-tensorflow
 
 WORKDIR /root/SPIRAL-tensorflow

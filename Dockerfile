@@ -1,5 +1,5 @@
 # A Dockerfile that sets up a full Gym install
-FROM ubuntu:16.07
+FROM ubuntu:18.04
 
 ENV DEBIAN_FRONTEND noninteractive
 ENV LANG en_US.UTF-8
